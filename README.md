@@ -52,7 +52,7 @@ then  file will save in your entered path.
 ![exported chart image](https://s4.uupload.ir/files/chartio-example_4hp0.png)
 
 
-##Customization
+## Customization
 
 for publish config file:
 ```bash
