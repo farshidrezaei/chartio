@@ -1,0 +1,20 @@
+{
+  "name": "lifeweb/chartio",
+  "description": "simple elasticsearch orm and query builder",
+  "type": "library",
+  "require": {
+    "spatie/browsershot": "^3.50"
+  },
+  "authors": [
+    {
+      "name": "Farshid Rezaei",
+      "email": "farshid.net1@yahoo.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "src/Helpers/helpers.php"
+    ]
+  },
+  "minimum-stability": "dev"
+}
