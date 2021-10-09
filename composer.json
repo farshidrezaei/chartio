@@ -1,5 +1,5 @@
 {
-  "name": "lifeweb/chartio",
+  "name": "farshidrezaei/chartio",
   "description": "simple elasticsearch orm and query builder",
   "type": "library",
   "require": {
