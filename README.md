@@ -10,8 +10,8 @@ in progress:
 - [X] bar chart
 - [X] column chart
 - [X] line chart
-- [ ] pie chart
-- [ ] donut chart
+- [X] pie chart
+- [X] donut chart
 
 ## Chartio environment
 Set bellow config to `.env` file  with your installed node and npm path
