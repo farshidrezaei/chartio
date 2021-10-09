@@ -49,8 +49,50 @@ return Chartio::make( 'cloud' )
  
  ```
 then  file will save in your entered path.
-![exported chart image](https://s4.uupload.ir/files/chartio-example_4hp0.png)
 
+![exported chart image](https://s4.uupload.ir/files/chartio-example_wmr.png)
+
+
+## Data Sample for each chart
+
+ ### line:
+```php
+ $data = [
+            'labels' => [ '1999', '2000', '2005' ],
+            'series' => [
+                [
+                    'title' => 'foo',
+                    'data'  => [ 10, 5, 30 ],
+                ],
+                [
+                    'title' => 'foo',
+                    'data'  => [ 15, 26, 5 ],
+                ],
+            ],
+        ];
+```
+export example:
+
+![exported chart image](https://s4.uupload.ir/files/line_y6mz.png)
+
+
+### cloud:
+```php
+$data = [  
+ ['title'=>'foo','count'=>1234],  
+  ['title'=>'bar','count'=>5475],  
+  ['title'=>'baz','count'=>452],  
+  ['title'=>'don','count'=>1457],  
+  ['title'=>'shi','count'=>2458],  
+  ['title'=>'iran','count'=>3115],  
+  ['title'=>'persian','count'=>455],  
+  ['title'=>'farshid','count'=>5126],  
+  ['title'=>'lifeweb','count'=>1111],  
+];  
+```
+export example:
+
+![exported chart image](https://s4.uupload.ir/files/cloud_ohlo.png)
 
 ## Customization
 

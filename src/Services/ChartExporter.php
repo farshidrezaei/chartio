@@ -29,7 +29,6 @@ class ChartExporter
             ->showBackground()
             ->setDelay( 2500 )
             ->select( '#chart-wrapper' )
-            ->format( 'A4' )
             ->save( $path );
         unlink( $this->htmlPath );
         return $path;

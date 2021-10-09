@@ -9,12 +9,12 @@ use FarshidRezaei\Chartio\Services\ChartExporter;
 use Spatie\Browsershot\Browsershot;
 
 
-class CloudChart extends AbstractChart
+class LineChart extends AbstractChart
 {
 
-    protected string $type = 'cloud';
+    protected string $type = 'line';
 
-    protected string $bladeTemplate = 'chartio::charts.cloud';
+    protected string $bladeTemplate = 'chartio::charts.line';
 
     #[Pure]
     public static function new(): self

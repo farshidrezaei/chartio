@@ -4,10 +4,10 @@
 namespace FarshidRezaei\Chartio\Services;
 
 
-use Intervention\Image\Exception\NotFoundException;
 use FarshidRezaei\Chartio\Services\Charts\AbstractChart;
 use FarshidRezaei\Chartio\Services\Charts\CloudChart;
-use FarshidRezaei\Chartio\Services\Charts\HistogramChart;
+use FarshidRezaei\Chartio\Services\Charts\LineChart;
+use Intervention\Image\Exception\NotFoundException;
 
 class Chartio
 {
@@ -18,7 +18,8 @@ class Chartio
      */
     public const CHARTS
         = [
-            'cloud'     => CloudChart::class,
+            'cloud' => CloudChart::class,
+            'line'  => LineChart::class,
         ];
 
 
