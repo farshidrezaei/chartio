@@ -176,3 +176,10 @@ for publish view files :
 ```bash
 php artisan vendor:publish --provider="FarshidRezaei\Chartio\Providers\ChartioServiceProvider" --tag="views"
 ```
+
+
+
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
