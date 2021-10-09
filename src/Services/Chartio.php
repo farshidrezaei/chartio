@@ -8,6 +8,7 @@ use FarshidRezaei\Chartio\Services\Charts\AbstractChart;
 use FarshidRezaei\Chartio\Services\Charts\CloudChart;
 use FarshidRezaei\Chartio\Services\Charts\ColumnChart;
 use FarshidRezaei\Chartio\Services\Charts\LineChart;
+use FarshidRezaei\Chartio\Services\Charts\BarChart;
 use Intervention\Image\Exception\NotFoundException;
 
 class Chartio
@@ -22,6 +23,7 @@ class Chartio
             'cloud' => CloudChart::class,
             'line'  => LineChart::class,
             'column'   =>ColumnChart::class,
+            'bar'   =>BarChart::class,
         ];
 
 
