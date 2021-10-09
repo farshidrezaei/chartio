@@ -1,15 +1,15 @@
 <?php
 
 
-namespace LifeWeb\Chartio\Services;
+namespace FarshidRezaei\Chartio\Services;
 
 
 use Intervention\Image\Exception\NotFoundException;
-use LifeWeb\Chartio\Services\Charts\AbstractChart;
-use LifeWeb\Chartio\Services\Charts\CloudChart;
-use LifeWeb\Chartio\Services\Charts\HistogramChart;
+use FarshidRezaei\Chartio\Services\Charts\AbstractChart;
+use FarshidRezaei\Chartio\Services\Charts\CloudChart;
+use FarshidRezaei\Chartio\Services\Charts\HistogramChart;
 
-class ChartFactory
+class Chartio
 {
 
 

@@ -1,17 +1,17 @@
 <?php
 
 
-namespace LifeWeb\Chartio\Services\Charts;
+namespace FarshidRezaei\Chartio\Services\Charts;
 
 
 use JetBrains\PhpStorm\Pure;
-use LifeWeb\Chartio\Services\ChartExporter;
+use FarshidRezaei\Chartio\Services\ChartExporter;
 use Spatie\Browsershot\Browsershot;
 
 /**
  * Class PublicationFlowChart
  *
- * @package LifeWeb\Chartio\Services\Chart
+ * @package FarshidRezaei\Chartio\Services\Chart
  */
 class CloudChart extends AbstractChart
 {

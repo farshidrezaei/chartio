@@ -1,6 +1,6 @@
 <?php
 
-namespace LifeWeb\Chartio\Providers;
+namespace FarshidRezaei\Chartio\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

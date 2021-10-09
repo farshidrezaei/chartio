@@ -1,10 +1,10 @@
 <?php
 
 
-namespace LifeWeb\Chartio\Services\Charts;
+namespace FarshidRezaei\Chartio\Services\Charts;
 
 
-use LifeWeb\Chartio\Services\ChartExporter;
+use FarshidRezaei\Chartio\Services\ChartExporter;
 
 abstract class AbstractChart
 {

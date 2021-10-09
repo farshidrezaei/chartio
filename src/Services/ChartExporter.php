@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LifeWeb\Chartio\Services;
+namespace FarshidRezaei\Chartio\Services;
 
 
 use Spatie\Browsershot\Browsershot;
