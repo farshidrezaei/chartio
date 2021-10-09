@@ -1,6 +1,6 @@
 {
   "name": "farshidrezaei/chartio",
-  "description": "simple elasticsearch orm and query builder",
+  "description": "simple static chart generator for Laravel",
   "type": "library",
   "require": {
     "spatie/browsershot": "^3.50"
