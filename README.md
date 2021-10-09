@@ -120,6 +120,33 @@ export example:
 ![exported chart image](https://s4.uupload.ir/files/line_y6mz.png)
 
 
+
+### pie:
+```php
+   $data = [
+            ['title'=>'foo','count'=>1234],
+            ['title'=>'bar','count'=>125],
+            ['title'=>'baz','count'=>564],
+        ];
+```
+export example:
+
+![exported chart image](https://s4.uupload.ir/files/pie_qrst.png)
+
+### donut:
+```php
+   $data = [
+            ['title'=>'foo','count'=>1234],
+            ['title'=>'bar','count'=>125],
+            ['title'=>'baz','count'=>564],
+        ];
+```
+export example:
+
+![exported chart image](https://s4.uupload.ir/files/donut_m42h.png)
+
+
+
 ### cloud:
 ```php
 $data = [  
