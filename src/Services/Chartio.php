@@ -6,6 +6,7 @@ namespace FarshidRezaei\Chartio\Services;
 
 use FarshidRezaei\Chartio\Services\Charts\AbstractChart;
 use FarshidRezaei\Chartio\Services\Charts\CloudChart;
+use FarshidRezaei\Chartio\Services\Charts\ColumnChart;
 use FarshidRezaei\Chartio\Services\Charts\LineChart;
 use Intervention\Image\Exception\NotFoundException;
 
@@ -20,6 +21,7 @@ class Chartio
         = [
             'cloud' => CloudChart::class,
             'line'  => LineChart::class,
+            'column'   =>ColumnChart::class,
         ];
 
 

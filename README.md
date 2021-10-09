@@ -8,7 +8,8 @@ please install and setup  **browsershot** by docs  in [here](https://github.com/
 in progress:
 - [X] cloud chart
 - [ ] bar chart
-- [ ] line chart
+- [X] column chart
+- [X] line chart
 - [ ] pie chart
 - [ ] donut chart
 
@@ -52,8 +53,31 @@ then  file will save in your entered path.
 
 ![exported chart image](https://s4.uupload.ir/files/chartio-example_wmr.png)
 
+-----------------
 
 ## Data Sample for each chart
+
+
+### column:
+```php
+ $data = [
+            'labels' => [ '1999', '2000', '2005' ],
+            'series' => [
+                [
+                    'title' => 'foo',
+                    'data'  => [ 10, 5, 30 ],
+                ],
+                [
+                    'title' => 'bar',
+                    'data'  => [ 15, 26, 5 ],
+                ],
+            ],
+        ];
+```
+export example:
+
+![exported chart image](https://s4.uupload.ir/files/column_aamm.png)
+
 
  ### line:
 ```php
@@ -65,7 +89,7 @@ then  file will save in your entered path.
                     'data'  => [ 10, 5, 30 ],
                 ],
                 [
-                    'title' => 'foo',
+                    'title' => 'bar',
                     'data'  => [ 15, 26, 5 ],
                 ],
             ],
@@ -94,6 +118,8 @@ export example:
 
 ![exported chart image](https://s4.uupload.ir/files/cloud_ohlo.png)
 
+
+-----------
 ## Customization
 
 for publish config file:
