@@ -153,12 +153,6 @@ $data = [
  ['title'=>'foo','count'=>1234],  
   ['title'=>'bar','count'=>5475],  
   ['title'=>'baz','count'=>452],  
-  ['title'=>'don','count'=>1457],  
-  ['title'=>'shi','count'=>2458],  
-  ['title'=>'iran','count'=>3115],  
-  ['title'=>'persian','count'=>455],  
-  ['title'=>'farshid','count'=>5126],  
-  ['title'=>'lifeweb','count'=>1111],  
 ];  
 ```
 export example:
