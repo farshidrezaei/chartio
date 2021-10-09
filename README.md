@@ -1,9 +1,10 @@
 
 # Chartio , Static chart generator for Laravel
 
-Chartio, an static chart generator for Laravel. Chartio generate chart and get screenshot from it by using **`spatie/browsershot`** .
+Chartio, is a static chart generator for Laravel. Chartio generate chart by `highchart.js` and get screenshot from it by using **`spatie/browsershot`** .
 
 please install and setup  **browsershot** by docs  in [here](https://github.com/spatie/browsershot).
+
 
 in progress:
 - [X] cloud chart
