@@ -2,6 +2,7 @@
   "name": "farshidrezaei/chartio",
   "description": "simple static chart generator for Laravel",
   "type": "library",
+  "license": "MIT",
   "require": {
     "spatie/browsershot": "^3.50"
   },
