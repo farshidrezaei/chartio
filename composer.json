@@ -15,7 +15,10 @@
   "autoload": {
     "files": [
       "src/Helpers/helpers.php"
-    ]
+    ],
+    "psr-4": {
+      "FarshidRezaei\\Chartio\\": "src/"
+    }
   },
   "minimum-stability": "dev"
 }
