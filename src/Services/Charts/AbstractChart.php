@@ -9,6 +9,8 @@ use FarshidRezaei\Chartio\Services\ChartExporter;
 abstract class AbstractChart
 {
 
+    protected bool $rtl = false;
+
     protected string $bladeTemplate;
 
     protected string $type = '';
@@ -26,6 +28,8 @@ abstract class AbstractChart
     protected string $yAxisField = 'y';
 
     protected ?string $htmlPath = null;
+    protected string $color = '#13b6b9';
+    protected ?array $colorSet = [ "#009299", "#1AD7DB", "#589DFB", "#5EDFFF", "#B7E778" ];
 
 
     abstract public static function new(): AbstractChart;
@@ -98,4 +102,41 @@ abstract class AbstractChart
         $this->yAxisField = $yAxisField;
         return $this;
     }
+
+
+    /**
+     * @param  bool  $rtl
+     *
+     * @return $this
+     */
+    public function rtl( bool $rtl = true ): AbstractChart
+    {
+        $this->rtl = $rtl;
+        return $this;
+    }
+
+
+    /**
+     * @param  string  $color
+     *
+     * @return $this
+     */
+    public function color( string $color ): AbstractChart
+    {
+        $this->color = $color;
+        return $this;
+    }
+
+    /**
+     * @param  array  $colorSet
+     *
+     * @return $this
+     */
+    public function colorSet( array $colorSet ): AbstractChart
+    {
+        $this->colorSet = $colorSet;
+        return $this;
+    }
+
+
 }

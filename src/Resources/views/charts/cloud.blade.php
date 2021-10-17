@@ -2,7 +2,7 @@
 
 @section('chart')
     <figure id="chart-wrapper" class="highcharts-figure management-chart-item-box">
-        <div class="chart-item-title">
+        <div class="chart-item-title" style="background-color: {{$color??'#13b6b9'}}">
             <h2>{{$title}}</h2>
         </div>
         <div id="chart"></div>
@@ -14,7 +14,10 @@
     @push('scripts')
         <script>
             let jsonData = @json($data);
-            jsonData = jsonData.map(item => {
+
+            const colorSet = @json($colorSet);
+
+                jsonData = jsonData.map(item => {
                 return {name: item['{{$xAxis}}'], weight: item['{{$yAxis}}']}
             });
             Highcharts.chart('chart', {
@@ -28,7 +31,7 @@
                 series: [
                     {
                         type: 'wordcloud',
-                        colors: ["#009299", "#1AD7DB", "#589DFB", "#5EDFFF", "#B7E778"],
+                        colors: colorSet,
                         data: jsonData,
                         name: '',
                         style: {

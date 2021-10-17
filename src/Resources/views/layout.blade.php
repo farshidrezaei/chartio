@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa">
+<html dir="{{$rtl?'rtl':'ltr'}}" lang="fa">
 <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
     <title>Chart</title>

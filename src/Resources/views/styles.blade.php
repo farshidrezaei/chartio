@@ -4797,7 +4797,6 @@
     /*    }*/
     /*}*/
     .description{
-        text-align: right;
-        direction: rtl;
+        width: 100%;
     }
 </style>

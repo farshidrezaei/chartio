@@ -7,6 +7,7 @@ namespace FarshidRezaei\Chartio\Services;
 use FarshidRezaei\Chartio\Services\Charts\AbstractChart;
 use FarshidRezaei\Chartio\Services\Charts\CloudChart;
 use FarshidRezaei\Chartio\Services\Charts\ColumnChart;
+use FarshidRezaei\Chartio\Services\Charts\CustomChart;
 use FarshidRezaei\Chartio\Services\Charts\DonutChart;
 use FarshidRezaei\Chartio\Services\Charts\LineChart;
 use FarshidRezaei\Chartio\Services\Charts\BarChart;
@@ -28,6 +29,7 @@ class Chartio
             'bar'   =>BarChart::class,
             'donut'   =>DonutChart::class,
             'pie'   =>PieChart::class,
+            'abstract'   =>CustomChart::class,
         ];
 
 

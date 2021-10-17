@@ -33,6 +33,9 @@ class PieChart extends AbstractChart
             view( $this->bladeTemplate )
                 ->with(
                     [
+                        'rtl' => $this->rtl,
+                        'colorSet' => $this->colorSet,
+                        'color' => $this->color,
                         'xAxis'       => $this->xAxisField,
                         'yAxis'       => $this->yAxisField,
                         'title'       => $this->title,

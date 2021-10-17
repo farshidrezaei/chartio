@@ -9,12 +9,13 @@ use FarshidRezaei\Chartio\Services\ChartExporter;
 use Spatie\Browsershot\Browsershot;
 
 
-class ColumnChart extends AbstractChart
+class CustomChart extends AbstractChart
 {
 
-    protected string $type = 'column';
+    protected string $type = 'abstract';
 
-    protected string $bladeTemplate = 'chartio::charts.column';
+    protected string $bladeTemplate = 'chartio::charts.abstract';
+    protected array $chartOptions = [];
 
     #[Pure]
     public static function new(): self
@@ -24,7 +25,6 @@ class ColumnChart extends AbstractChart
 
 
     /**
-     *
      * @return ChartExporter
      */
     public function generate(): ChartExporter
@@ -36,11 +36,9 @@ class ColumnChart extends AbstractChart
                         'rtl' => $this->rtl,
                         'colorSet' => $this->colorSet,
                         'color' => $this->color,
-                        'xAxis'       => $this->xAxisField,
-                        'yAxis'       => $this->yAxisField,
-                        'title'       => $this->title,
+                        'title' => $this->title,
                         'description' => $this->description,
-                        'data'        => $this->data,
+                        'chartOptions' => $this->chartOptions,
                     ]
                 )
                 ->render()
@@ -50,10 +48,14 @@ class ColumnChart extends AbstractChart
         $this->htmlPath = "$tempDir/$tempName";
 
         file_put_contents( $this->htmlPath, $template );
-        return new ChartExporter($this->htmlPath);
+        return new ChartExporter( $this->htmlPath );
     }
 
-
+    public function chartOptions( array $chartOptions ): static
+    {
+        $this->chartOptions = $chartOptions;
+        return $this;
+    }
 
 
 }

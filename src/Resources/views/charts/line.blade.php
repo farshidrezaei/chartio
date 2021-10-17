@@ -2,7 +2,7 @@
 
 @section('chart')
     <figure id="chart-wrapper" class="highcharts-figure management-chart-item-box">
-        <div class="chart-item-title">
+        <div class="chart-item-title" style="background-color: {{$color??'#13b6b9'}}">
             <h2>{{$title}}</h2>
         </div>
         <div id="chart"></div>
@@ -15,11 +15,13 @@
 
             const data = @json($data);
 
+            const colorSet = @json($colorSet);
+
             Highcharts.setOptions({
                 locale: getPersianLocal()
             });
             Highcharts.chart('chart', {
-                colors: ["#009299", "#1AD7DB", "#589DFB", "#5EDFFF", "#B7E778"],
+                colors: colorSet,
                 chart: {
                     height: "250",
                     backgroundColor: 'transparent',

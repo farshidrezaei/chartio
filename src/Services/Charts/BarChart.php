@@ -24,7 +24,6 @@ class BarChart extends AbstractChart
 
 
     /**
-     *
      * @return ChartExporter
      */
     public function generate(): ChartExporter
@@ -33,11 +32,14 @@ class BarChart extends AbstractChart
             view( $this->bladeTemplate )
                 ->with(
                     [
-                        'xAxis'       => $this->xAxisField,
-                        'yAxis'       => $this->yAxisField,
-                        'title'       => $this->title,
+                        'rtl' => $this->rtl,
+                        'colorSet' => $this->colorSet,
+                        'color' => $this->color,
+                        'xAxis' => $this->xAxisField,
+                        'yAxis' => $this->yAxisField,
+                        'title' => $this->title,
                         'description' => $this->description,
-                        'data'        => $this->data,
+                        'data' => $this->data,
                     ]
                 )
                 ->render()
@@ -47,10 +49,8 @@ class BarChart extends AbstractChart
         $this->htmlPath = "$tempDir/$tempName";
 
         file_put_contents( $this->htmlPath, $template );
-        return new ChartExporter($this->htmlPath);
+        return new ChartExporter( $this->htmlPath );
     }
-
-
 
 
 }

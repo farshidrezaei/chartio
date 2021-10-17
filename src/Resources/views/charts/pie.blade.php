@@ -2,24 +2,29 @@
 
 @section('chart')
     <figure id="chart-wrapper" class="highcharts-figure management-chart-item-box">
-        <div class="chart-item-title">
+        <div class="chart-item-title" style="background-color: {{$color??'#13b6b9'}}">
             <h2>{{$title}}</h2>
         </div>
         <div id="chart"></div>
 
         <p class="description">
-           * {{$description}}
+            * {{$description}}
         </p>
     </figure>
     @push('scripts')
         <script>
+
             let jsonData = @json($data);
+
+            const colorSet = @json($colorSet);
+
             jsonData = jsonData.map(item => {
                 return {name: item['{{$xAxis}}'], y: item['{{$yAxis}}']}
             });
+
             Highcharts.chart('chart', {
                 backgroundColor: 'transparent',
-                colors: ["#009299", "#1AD7DB", "#589DFB", "#5EDFFF", "#B7E778"],
+                colors: colorSet,
                 credits: {
                     enabled: false
                 },
@@ -71,6 +76,7 @@
                     data: jsonData
                 }]
             });
+
         </script>
     @endpush
 @stop
