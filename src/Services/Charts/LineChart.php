@@ -50,7 +50,7 @@ class LineChart extends AbstractChart
         $this->htmlPath = "$tempDir/$tempName";
 
         file_put_contents( $this->htmlPath, $template );
-        return new ChartExporter($this->htmlPath);
+        return new ChartExporter($this->htmlPath,$this->width);
     }
 
 

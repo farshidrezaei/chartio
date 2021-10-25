@@ -27,6 +27,8 @@ abstract class AbstractChart
 
     protected string $yAxisField = 'y';
 
+    protected null|int|string $width=null;
+
     protected ?string $htmlPath = null;
     protected string $color = '#13b6b9';
     protected ?array $colorSet = [ "#009299", "#1AD7DB", "#589DFB", "#5EDFFF", "#B7E778" ];
@@ -65,6 +67,17 @@ abstract class AbstractChart
     public function description( string $description = '' ): AbstractChart
     {
         $this->description = $description;
+        return $this;
+    }
+
+     /**
+     * @param  string  $width
+     *
+     * @return $this
+     */
+    public function width( null|int|string $width = null ): AbstractChart
+    {
+        $this->width = $width;
         return $this;
     }
 

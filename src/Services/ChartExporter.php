@@ -19,17 +19,20 @@ class ChartExporter
     /**
      * @throws CouldNotTakeBrowsershot
      */
-    public function save( string $path ): string
+    public function save( string $path,$width=null ): string
     {
-        Browsershot::url(
+        $shot=Browsershot::url(
             "file://".$this->htmlPath
         )
             ->setNodeBinary( config( 'chartio.nodePath' ) )
             ->setNpmBinary( config( 'chartio.npmPath' ) )
             ->showBackground()
             ->setDelay( 2500 )
-            ->select( '#chart-wrapper' )
-            ->save( $path );
+            ->select( '#chart-wrapper' );
+            if ($width) {
+               $shot=$shot->width($width);
+            }
+            $shot->save( $path );
         unlink( $this->htmlPath );
         return $path;
     }
