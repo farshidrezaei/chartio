@@ -18,12 +18,34 @@ in progress:
 - [X] donut chart
 - [X] abstract chart (customizable)
 
+
+## Installation
+
+### composer
+
+```bash
+composer require farshidrezaei/chartio
+```
+
 ## Chartio environment
 Set bellow config to `.env` file  with your installed node and npm path
 ```dotenv  
 NODE_PATH=
 NPM_PATH=
 ```  
+
+## Customization
+
+for publish config file:
+```bash
+php artisan vendor:publish --provider="FarshidRezaei\Chartio\Providers\ChartioServiceProvider" --tag="config"
+```
+
+for publish view files :
+```bash
+php artisan vendor:publish --provider="FarshidRezaei\Chartio\Providers\ChartioServiceProvider" --tag="views"
+```
+
 
 ## Usage
 Here's a quick example:
@@ -316,21 +338,6 @@ $imagePath = Chartio::make( 'abstract' )
 export example:
 
 ![exported chart image](https://github.com/farshidrezaei/chartio/blob/main/doc/abstract.png)
-
-
------------
-## Customization
-
-for publish config file:
-```bash
-php artisan vendor:publish --provider="FarshidRezaei\Chartio\Providers\ChartioServiceProvider" --tag="config"
-```
-
-for publish view files :
-```bash
-php artisan vendor:publish --provider="FarshidRezaei\Chartio\Providers\ChartioServiceProvider" --tag="views"
-```
-
 
 
 

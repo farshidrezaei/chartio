@@ -9,9 +9,18 @@
   "authors": [
     {
       "name": "Farshid Rezaei",
-      "email": "farshid.net1@yahoo.com"
+      "email": "farshid.net1@yahoo.com",
+      "homepage": "https://farshidrezaei.ir",
+      "role": "Full-Stack Web Developer"
     }
   ],
+  "extra": {
+    "laravel": {
+        "providers": [
+            "FarshidRezaei\\Chartio\\Providers\\ChartioServiceProvider"
+        ]
+    }
+},
   "autoload": {
     "files": [
       "src/Helpers/helpers.php"
