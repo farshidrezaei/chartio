@@ -24,6 +24,7 @@ class ChartExporter
         $shot=Browsershot::url(
             "file://".$this->htmlPath
         )
+            ->noSandbox()
             ->setNodeBinary( config( 'chartio.nodePath' ) )
             ->setNpmBinary( config( 'chartio.npmPath' ) )
             ->showBackground()
