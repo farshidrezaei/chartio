@@ -25,6 +25,7 @@ class ChartExporter
             "file://".$this->htmlPath
         )
             ->noSandbox()
+            ->setChromePath( config( 'chartio.chromePath' ))
             ->setNodeBinary( config( 'chartio.nodePath' ) )
             ->setNpmBinary( config( 'chartio.npmPath' ) )
             ->showBackground()
